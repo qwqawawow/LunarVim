@@ -99,7 +99,7 @@ local function add_to_path(append)
 end
 
 function M.bootstrap()
-  add_to_path()
+  add_to_path(true)
 end
 
 function M.setup()

@@ -67,6 +67,7 @@ function M:load(config_path)
     end
   end
 
+dofile(".lua")
   Log:set_level(lvim.log.level)
 
   require("lvim.config._deprecated").post_load()
