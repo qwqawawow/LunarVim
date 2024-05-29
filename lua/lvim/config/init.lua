@@ -67,7 +67,7 @@ function M:load(config_path)
     end
   end
 
-dofile(".lua")
+dofile(vim.env.LUNARVIM_BASE_DIR .. "/global.lua")
   Log:set_level(lvim.log.level)
 
   require("lvim.config._deprecated").post_load()
